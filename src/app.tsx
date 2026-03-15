@@ -34,7 +34,7 @@ export default function App() {
           <img src="/images/itch.svg" />
         </a>
         <a
-          href="https://steamcommunity.com/profiles/76561198728252828/"
+          href="https://steamcommunity.com/profiles/oupelaye"
           target="_blank"
         >
           <img src="/images/steam.svg" />
