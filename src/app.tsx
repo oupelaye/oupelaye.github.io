@@ -52,7 +52,7 @@ export default function App() {
         <a href="https://youtube.com/@oupelaye.studio" target="_blank">
           <img src="/images/youtube.svg" />
         </a>
-        <a href="https://discord.com" target="_blank">
+        <a href="https://discord.gg/vHWTVD5t" target="_blank">
           <img src="/images/discord.svg" />
         </a>
       </footer>
