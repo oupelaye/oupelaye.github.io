@@ -1,6 +1,7 @@
+import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-import ShibaLayout from "./models/shiba-layout";
+import Model from "./models/grimace-layout";
 
 export default function App() {
   return (
@@ -18,10 +19,11 @@ export default function App() {
           </div>
         </div>
         <div className="relative flex-1 overflow-hidden">
-          <Canvas camera={{ position: [1, 1, 2] }}>
-            <ambientLight />
-
-            <ShibaLayout position={[0, -0.5, 0]} />
+          <Canvas camera={{ position: [0, 1, 8], fov: 60 }}>
+            <Stage intensity={0.5} environment="city">
+              <Model />
+            </Stage>
+            <OrbitControls makeDefault />
           </Canvas>
         </div>
       </div>
@@ -33,10 +35,7 @@ export default function App() {
         <a href="https://oupelaye.itch.io" target="_blank">
           <img src="/images/itch.svg" />
         </a>
-        <a
-          href="https://steamcommunity.com/profiles/oupelaye"
-          target="_blank"
-        >
+        <a href="https://steamcommunity.com/profiles/oupelaye" target="_blank">
           <img src="/images/steam.svg" />
         </a>
         <a href="https://youtube.com/@oupelaye.studio" target="_blank">
